@@ -1,0 +1,522 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Lora:wght@400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* Apply for all as default */
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  align-items: center;
+}
+
+/* Apply for both body and HTML */
+body, html {
+  height: 100svh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.no {
+  display: none;
+}
+
+/* Body settings */
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0)), url('img/bg.png'); /* Import background image with dark gradient */
+  /* Background fitting */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* Overflow */
+  overflow: auto;
+}
+
+/* Responsiveness */
+@media only screen and (max-width: 882px) {
+  .h {
+    display: none;
+  }
+
+  .hm {
+    position: fixed;
+    margin-top: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5rem;
+    padding: 20px 100px;
+    background: rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 4px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    transition: 1s ease;
+  }
+
+  .logo {
+    color: lightgray;
+    font-size: 25px;
+    text-decoration: none;
+    font-weight: 800;
+    cursor: hand;
+    text-shadow: 0 0 10px rgba(0, 0, 0);
+    transition: 1s ease;
+    margin-left: -3rem;
+  }
+
+  .hm i {
+    margin-right: -3rem;
+    text-shadow: 0 0 10px rgba(0, 0, 0);
+    transition: 0.2s ease;
+    transition-property: transform;
+  }
+
+  .hm i:active {
+    transform: scale(80%);
+    transition: 0.2s ease;
+  }
+
+  .nb {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    z-index: 999;
+    position: fixed;
+    flex-direction: column;
+    margin-top: 4.5rem;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #nav {
+    display: none;
+  }
+
+  .ad {
+    display: flex;
+    width: 100%;
+    height: 4rem;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 4px solid rgba(200, 200, 200, 0.15);
+    background: rgba(200, 200, 200, 0.1);
+    transition: 0.5s ease;
+  }
+
+  .ad a {
+    color: rgb(200, 200, 200);
+    text-decoration: none;
+    font-weight: 600;
+    text-shadow: 0 0 10px rgba(0, 0, 0);
+    pointer-events: none;
+  }
+
+  .ad:hover {
+    background: rgba(200, 200, 200, 0.2);
+  }
+
+  .ad:nth-child(1) {
+    border-top: 0px;
+  }
+}
+
+@media only screen and (min-width: 882px) {
+  /* Header styles */
+  .hm, .nb {
+    display: none;
+  }
+  
+  .h {
+    position: fixed;
+    margin-top: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5rem;
+    padding: 20px 100px;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 4px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    transition: 1s ease;
+  }
+
+  /* Glow effect */
+  .h::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    pointer-events: none;
+    transition: 2s ease;
+  }
+
+  /* Glow effect hover */
+  .h:hover::before {
+    left: 100%;
+  }
+
+  /* Header hover */
+  .h:hover {
+    height: 5.5rem;
+  }
+
+  /* Logo styles */
+  .logo {
+    color: lightgray;
+    font-size: 25px;
+    text-decoration: none;
+    font-weight: 800;
+    cursor: hand;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: 1s ease;
+  }
+
+  /* Navigation bar hyperlink styles */
+  .navbar a {
+    float: left;
+    color: lightgray;
+    font-size: 18px;
+    text-decoration: none;
+    margin-left: 35px;
+    cursor: hand;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: 0.5s ease;
+  }
+
+  /* Navigation bar & logo hover */
+  .navbar a:hover, .logo:hover {
+    color: white;
+    letter-spacing: 3px;
+  }
+
+  /* Navigation bar link hover */
+  .navbar a:hover {
+    font-weight: 600;
+  }
+}
+
+/* Content container settings */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+/* Login form container design */
+.login-form {
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 3rem;
+  border-radius: 1rem;
+  border: 2px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Login form header design */
+.login-form-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -2rem;
+  margin-bottom: 1em;
+}
+
+/* Header text color */
+.header {
+  color: lightgray;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Login form input design */
+.form-group input {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.02);
+  border-radius: 3rem;
+  border: 2px solid rgba(255, 255, 255, 0.18);
+  padding: 0.8em;
+  padding-left: 3.5em;
+  color: lightgray;
+  outline: none;
+  margin-bottom: 1.5em;
+  font-size: 16px;
+  transition-duration: 0.5s;
+  transition-property: background-color, border;
+}
+
+/* Input hover design */
+.form-group input:hover {
+  background-color: rgba(255, 255, 255, 0.04);
+  border: 2px solid rgba(255, 255, 255, 0.36);
+  transition: 0.5s ease;
+}
+
+/* Input icon positioning */
+.form-group i {
+  position: absolute;
+  transform: translate(1.35rem, 1.05rem);
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.18);
+}
+
+/* Settings for password field */
+.form-group input[type="password"] + i {
+  position: absolute;
+  right: 4.5em;
+  top: 13.55em;
+  color: white;
+}
+
+/* Design settings for "remember me" checkbox and "Forgot password?" hyperlink section */
+.extra {
+  color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+}
+
+/* Login button design */
+.form-group button[type="submit"] {
+  font-size: 16px;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.18);
+  border-radius: 3em;
+  width: 100%;
+  padding: 0.8em;
+  margin-top: 0.8em;
+  border: 2px solid rgba(255, 255, 255, 0.18);
+  transition-duration: 0.5s;
+  transition-property: background-color, border, transform, -webkit-transform;
+}
+
+/* Login button hover design */
+.form-group button[type="submit"]:hover {
+  background-color: rgba(255, 255, 255, 0.36);
+  border: 2px solid rgba(255, 255, 255, 0.36);
+  transition: 0.5s ease;
+}
+
+/* Login button click animation */
+.form-group button[type="submit"]:active {
+  transform: scale(95%);
+  -webkit-transform: scale(95%);
+  transition: 0.2s ease;
+}
+
+/* Checkbox design */
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.36);
+  vertical-align: middle;
+  margin-right: 0.75em;
+  margin-top: 0.1em;
+  transition: all 0.20s ease 0s;
+}
+
+/* When checkbox has been checked */
+input[type="checkbox"]:checked {
+  border: 4px solid rgba(73, 165, 233, 0.72);
+  transition: 0.2s ease;
+}
+
+/* Checkbox end content (for spacing) */
+.remember-me::after {
+  content: "\2003";
+}
+
+/* "Remember me" text color */
+.extra span {
+  color: lightgray;
+}
+
+/* Hyperlink design */
+.extra a {
+  transition-duration: 0.5s;
+  transition-property: color, text-decoration;
+}
+
+/* Default hyperlink design */
+.extra a:link {
+  color: rgba(73, 165, 233, 0.72);
+  text-decoration: none;
+}
+
+/* When hyperlink has been visited (no change) */
+.extra a:visited {
+  color: rgba(73, 165, 233, 0.72);
+  text-decoration: none;
+}
+
+/* When hovering over hyperlink (brighten) */
+.extra a:hover {
+  color: rgba(73, 165, 233);
+  text-decoration: none;
+  transition: 0.5s ease;
+}
+
+/* Register section positioning */
+.register-section {
+  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+/* Register section text color */
+.register-section span {
+  color: lightgray;
+}
+
+/* Register hyperlink */
+.register {
+  transition-duration: 0.5s;
+  transition-property: color, text-decoration;
+}
+
+/* Hyperlink default settings */
+.register:link {
+  color: rgba(191, 143, 219, 0.72);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* If visited link */
+.register:visited {
+  color: rgba(191, 143, 219, 0.72);
+  text-decoration: none;
+}
+
+/* When hovering over hyperlink */
+.register:hover {
+  color: rgba(191, 143, 219);
+  text-decoration: none;
+  transition: 0.5s ease;
+}
+
+/* Footer */
+.footer {
+  width: 100%;
+}
+
+.f-content {
+  width: 100%;
+  height: 4vw;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 20px 100px;
+  background: rgba(255, 255, 255, 0.075);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-top: 4px solid rgba(255, 255, 255, 0.1);
+}
+
+@media only screen and (max-width: 424px) {
+  .f-content p {
+    font-size: 3vw;
+  }
+}
+
+@media only screen and (min-width: 425px) {
+  .f-content p {
+    font-size: 2.5vw;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .f-content p {
+    font-size: 2vw;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .f-content p {
+    font-size: 1.5vw;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .f-content p {
+    font-size: 1vw;
+  }
+}
+
+.f-content .p1 {
+  color: lightgray;
+}
+
+.f-content #p2 {
+  color: slateblue;
+  text-decoration: none;
+  opacity: 0.72;
+  transition: 1s ease;
+}
+
+.f-content #p2:hover {
+  color: slateblue;
+  opacity: 1;
+}
+
+.f-content #p3 {
+  color: lightcoral;
+}
+
+@media only screen and (max-width: 274px) {
+  body {
+    background: white;
+    padding: 15px;
+    align-items: center;
+  }
+
+  .no {
+    margin-top: -10px;
+    display: block;
+  }
+
+  .container {
+    display: none
+  }
+
+  .hm {
+    display: none;
+  }
+
+  navbar {
+    display: none;
+  }
+
+  footer {
+    display: none;
+  }
+}

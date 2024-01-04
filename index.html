@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plexiglass - Login/Register</title>
+  <link href="style.css" rel="stylesheet" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+  <p class="no">This site is not supported by your screen.</p>
+  <!-- Header -->
+  <header class="h">
+    <!-- Logo -->
+    <a href="#" class="logo">PLEXIGLASS</a>
+    
+    <!-- Navigation bar -->
+    <nav class="navbar">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Portfolio</a>
+      <a href="#">Services</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <header class="hm">
+    <!-- Logo -->
+    <a href="#" class="logo">PLEXIGLASS</a>
+
+    <i class='bx bx-menu' style='color: lightgray; font-size: 30px;' id="menu-btn"></i>
+  </header>
+  <!-- Navigation bar -->
+  <nav class="nb" id="nav">
+    <div class="ad" onclick="location.replace('#');">
+      <a href="#">Home</a>
+    </div>
+    <div class="ad" onclick="location.replace('#');">
+      <a href="#">About</a>
+    </div>
+    <div class="ad" onclick="location.replace('#');">
+      <a href="#">Portfolio</a>
+    </div>
+    <div class="ad" onclick="location.replace('#');">
+      <a href="#">Services</a>
+    </div>
+    <div class="ad" onclick="location.replace('#');">
+      <a href="#">Contact</a>
+    </div>
+  </nav>
+  
+  <!-- Body content container, centered horizontally and vertically -->
+  <div class="container">
+    <!-- Login form container -->
+    <div class="login-form">
+      <!-- Login form header -->
+      <div class="login-form-header">
+        <h1 class="header">Login</h1>
+      </div>
+      <!-- Login form body - input fields and hyperlinks -->
+      <div class="login-form-body">
+        <form>
+          <!-- Email field content -->
+          <div class="form-group" id="e">
+            <i class='bx bxs-user' id="1"></i>
+            <input type="email" id="email" placeholder="Email" oninvalid="this.setCustomValidity(' ')" oninput="this.setCustomValidity('')" autocomplete="off" autocorrect="false" autocapitalize="false" required>
+          </div>
+          <!-- Password field content -->
+          <div class="form-group" id="p">
+            <i class='bx bxs-lock-alt' id="2"></i>
+            <input type="password" id="password" placeholder="Password" oninvalid="this.setCustomValidity(' ')" oninput="this.setCustomValidity('')" autocomplete="off" autocorrect="false" autocapitalize="false" required>
+          </div>
+          <!-- "Remember me" checkbox and "Forgot password?" hyperlink -->
+          <div class="extra">
+            <div class="checkbox">
+              <input type="checkbox" id="remember"><span class="remember-me">Remember me!</span></input>
+            </div>
+            <div class="forgot-password">
+              <a href="#">Forgot password?</a>
+            </div>
+          </div>
+          <!-- Login button -->
+          <div class="form-group">
+            <button id="login" type="submit">Login</button>
+          </div>
+          <!-- Hyperlink for unregistered users -->
+          <div class="register-section">
+            <span>Don't have an account? <a href="register.html" class="register">Register!</a></span>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- Footer -->
+  <footer class="f">
+    <div class="f-content">
+      <p class="p1">Made with</p><p id="p3">&nbsp;♥&nbsp;</p><p class="p1">by&nbsp;</p><a id="p2" href="https://replit.com/@v81d" target="_blank">@v81d</a><p class="p1">.</p>
+    </div>
+  </footer>
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+  <script type='application/javascript' src='fastclick.js'>
+  </script>
+</body>
+
+</html>
