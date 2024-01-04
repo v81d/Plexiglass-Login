@@ -44,8 +44,6 @@ Additional details:
 
 This project is (probably) not fully complete and will likely be improved in the near future. You may also suggest changes by forking this repository and creating a pull request or opening an issue.
 
-A list of (un)commonly used resources that I find helpful are listed in the acknowledgements.
-
 ## Built With
 
 This section lists major frameworks that this project was built using.
