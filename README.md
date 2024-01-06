@@ -10,7 +10,7 @@
     A simple login & register page with a space/glass theme.
     <br/>
     <br/>
-    <a href="http://v81d.sharestaging.com/Plexiglass-Template/LoginPage/index.html">View Demo</a>
+    <a href="http://v81d.sharestaging.com/Plexiglass/Login/index.html">View Demo</a>
     -
     <a href="https://github.com/v81d/Plexiglass-LoginRegister/issues">Report Bug</a>
     -
