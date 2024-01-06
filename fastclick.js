@@ -845,6 +845,3 @@ if ('addEventListener' in document) {
     FastClick.attach(document.body);
   }, false);
 }
-
-var attachFastClick = require('fastclick');
-attachFastClick(document.body);
