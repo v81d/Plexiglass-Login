@@ -4,10 +4,10 @@
     <img src="https://replit.com/cdn-cgi/image/width=64,quality=80,format=auto/https://storage.googleapis.com/replit/images/1704248476149_1b9481201cf0af353d41e3b8cc5248ab.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Plexiglass - Login Page</h3>
+  <h3 align="center">Plexiglass - Login/Register Theme</h3>
 
   <p align="center">
-    A simple login & register page with a space/glass theme.
+    A simple login & register page with a space and glass theme.
     <br/>
     <br/>
     <a href="http://v81d.sharestaging.com/Plexiglass/Login/index.html">View Demo</a>
@@ -20,12 +20,11 @@
   </p>
 </p>
 
-![Downloads](https://img.shields.io/github/downloads/v81d/Plexiglass-LoginRegister/total) ![Contributors](https://img.shields.io/github/contributors/v81d/Plexiglass-LoginRegister?color=dark-green) ![Forks](https://img.shields.io/github/forks/v81d/Plexiglass-LoginRegister?style=social) ![Stargazers](https://img.shields.io/github/stars/v81d/Plexiglass-LoginRegister?style=social) ![Issues](https://img.shields.io/github/issues/v81d/Plexiglass-LoginRegister) ![License](https://img.shields.io/github/license/v81d/Plexiglass-LoginRegister) 
+![Downloads](https://img.shields.io/github/downloads/v81d/Plexiglass-Login/total) ![Contributors](https://img.shields.io/github/contributors/v81d/Plexiglass-Login?color=dark-green) ![Forks](https://img.shields.io/github/forks/v81d/Plexiglass-Login?style=social) ![Stargazers](https://img.shields.io/github/stars/v81d/Plexiglass-Login?style=social) ![Issues](https://img.shields.io/github/issues/v81d/Plexiglass-Login) ![License](https://img.shields.io/github/license/v81d/Plexiglass-Login) 
 
 ## Table Of Contents
 
 * [About the Project](#about-the-project)
-* [Built With](#built-with)
 * [Getting Started](#getting-started)
   * [Installation](#installation)
 * [Authors](#authors)
@@ -38,18 +37,10 @@
 
 Additional details:
 
-* Created in ~3 days
-* Created using [Replit](https://replit.com/@v81d/Plexiglass-LoginRegister)
-* No designer used
+* Created in ~3 days.
+* Created using [Replit](https://replit.com/@v81d/Plexiglass-LoginRegister) (LOL).
 
 This project is (probably) not fully complete and will likely be improved in the near future. You may also suggest changes by forking this repository and creating a pull request or opening an issue.
-
-## Built With
-
-This section lists major frameworks that this project was built using.
-
-* Replit (or any code editor, preferably Visual Studio instead of Replit)
-* [Vite](https://vitejs.dev) (for auto-refresh)
 
 ## Getting Started
 
@@ -57,13 +48,13 @@ To get a copy up and running follow these simple example steps:
 
 ### Installation
 
-1. Download the repository as a .zip file
+1. Download the repository as a .zip file.
 
-2. Extract the compressed file
+2. Extract the compressed file.
 
-3. Edit the code and tweak the settings to your preference
+3. Edit the code and tweak the settings to your preferences.
 
-4. Upload/deploy it onto your site
+4. Upload/deploy it onto your site.
 
 ## Author(s)
 
