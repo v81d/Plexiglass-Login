@@ -1,12 +1,12 @@
 <br/>
-<p align="center">
+<p>
   <a href="https://github.com/v81d/Plexiglass-LoginRegister">
     <img src="https://replit.com/cdn-cgi/image/width=64,quality=80,format=auto/https://storage.googleapis.com/replit/images/1704248476149_1b9481201cf0af353d41e3b8cc5248ab.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Plexiglass - Login/Register Theme</h3>
+  <h2>Plexiglass - Login/Register Theme</h2>
 
-  <p align="center">
+  <p>
     A simple login & register page with a space and glass theme.
     <br/>
     <br/>
