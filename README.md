@@ -33,7 +33,7 @@
 
 ![Screenshot](https://github.com/v81d/Plexiglass-LoginRegister/assets/92650958/779c58a2-4a28-4396-a669-a23067ebdec9)
 
-"Plexiglass" is a responsive login & register page with a space/glass design. It was created purely using HTML, CSS, and JavaScript and works on all devices of a screen width greater than 275px.
+"Plexiglass" is a responsive login & register page with a space/glass design. It was created purely using HTML, CSS, and JavaScript and works on all devices with a screen width greater than 275px.
 
 Additional details:
 
